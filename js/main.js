@@ -39,7 +39,7 @@ function removeCard(){
     }
   
 
-    const BASE_URL = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`;
+    const BASE_URL = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`;
 
     const fetchWeather = async () => {
       try {
