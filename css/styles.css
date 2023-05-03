@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: black;
+    min-height: 100vh;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .header {
+    background-color: aqua;
+    padding: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .title {
+
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .form {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .inputText {
+   display: block;
+   margin-right: 20px;
+   padding: 5px;
+   width: 240px;
+   height: 30px;
+   
+  }
+
+  .btn {
+   display: inline-block;
+   background-color: rgba(128, 162, 235, 0.8);
+   color: white;
+   border-radius: 4px;
+   border-color: black;
+   cursor: pointer;
+   transition: color 0.2s ease-in;
+  }
+
+    .btn:hover, :focus {
+    color: black;
+  }
+
+.card {
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 360px;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px rgba(128, 162, 235, 0.8);
+    font-size: 36px;
+    
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px rgba(128, 162, 235, 0.8);
+}
+
+.city {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.country {
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: top;
+    border:  1px solid;
+    border-radius: 4px;
+    background-color: rgba(128, 162, 235, 0.8);
+    height: 100%;
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+}
+
+  .footer {
+    padding: 20px;
+    background-color: aqua;
+    text-align: center;
+    margin-top: auto;
+  }
